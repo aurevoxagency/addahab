@@ -1,16 +1,52 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect, useRef } from "react";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import MarqueeStrip from "@/components/MarqueeStrip";
+import AboutSection from "@/components/AboutSection";
+import CollectionsGrid from "@/components/CollectionsGrid";
+import WhyUsSection from "@/components/WhyUsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
+import LocationsCTA from "@/components/LocationsCTA";
+import Footer from "@/components/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const el = mainRef.current;
+    if (el) {
+      const reveals = el.querySelectorAll(".scroll-reveal, .stagger-children");
+      reveals.forEach((r) => observer.observe(r));
+      return () => reveals.forEach((r) => observer.unobserve(r));
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div ref={mainRef} className="bg-background min-h-screen">
+      <Navbar />
+      <HeroSection />
+      <MarqueeStrip />
+      <AboutSection />
+      <CollectionsGrid />
+      <WhyUsSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <LocationsCTA />
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
