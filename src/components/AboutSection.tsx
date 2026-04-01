@@ -1,3 +1,5 @@
+import logo from "@/assets/logoaddahab.jpg";
+
 const stats = [
   { value: "63K+", label: "Abonnés" },
   { value: "3", label: "Boutiques" },
@@ -17,7 +19,7 @@ const AboutSection = () => (
             <span className="gold-gradient-text italic">depuis des générations</span>
           </h2>
           <p className="font-body text-ivory/50 leading-relaxed mb-4">
-            Addahab Elhayani est une maison de joaillerie basée à Casablanca, dédiée à l'art de l'or
+            Addahab  est une maison de joaillerie basée à Casablanca, dédiée à l'art de l'or
             depuis des décennies. Chaque pièce est sélectionnée avec soin pour offrir à nos clients
             l'excellence en matière de bijoux et montres de prestige.
           </p>
@@ -27,25 +29,17 @@ const AboutSection = () => (
           </p>
         </div>
 
-        {/* Decorative geometric frame */}
+        {/* Logo */}
         <div className="scroll-reveal flex items-center justify-center">
-          <div className="relative w-72 h-80">
-            {/* Outer frame */}
-            <div className="absolute inset-0 border border-gold/30" />
-            {/* Inner frame offset */}
-            <div className="absolute inset-4 border border-gold/20" />
-            {/* Diamond center */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 border border-gold/40 rotate-45" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-gold/25 rotate-45" />
-            {/* Corner accents */}
-            <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-gold/50" />
-            <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-gold/50" />
-            <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-gold/50" />
-            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-gold/50" />
-            {/* Center text */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-display text-2xl text-gold/60 italic tracking-wider">A.E</span>
-            </div>
+          <div className="relative w-full flex items-center justify-center group">
+            {/* Glow effect background */}
+            <div className="absolute inset-0 bg-gradient-radial from-gold/10 to-transparent rounded-2xl blur-3xl group-hover:from-gold/20 transition-all duration-300" />
+            {/* Logo image with shadow and hover effects */}
+            <img 
+              src={logo} 
+              alt="Addahab Logo" 
+              className="w-80 h-80 object-contain p-8 rounded-2xl shadow-2xl group-hover:shadow-gold/50 group-hover:scale-105 transition-all duration-300 relative z-10"
+            />
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "@/assets/logoaddahab.jpg";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
@@ -24,14 +25,9 @@ const Navbar = () => {
         scrolled ? "bg-deep-black/95 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#accueil" className="flex flex-col leading-tight">
-          <span className="font-display text-xl font-semibold text-gold tracking-wider">
-            Addahab Elhayani
-          </span>
-          <span className="font-display text-xs text-gold/60 tracking-[0.3em]">
-            أضهب الحياني
-          </span>
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#accueil" className="flex items-center gap-3">
+          <img src={logo} alt="Addahab Logo" className="h-14 w-auto object-contain" />
         </a>
 
         {/* Desktop links */}

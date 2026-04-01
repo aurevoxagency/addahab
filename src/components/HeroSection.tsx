@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import videoAsset from "@/assets/855854-hd_1280_720_24fps.mp4";
 
 const HeroSection = () => {
   const headline = "L'Or à l'état pur";
@@ -19,6 +20,20 @@ const HeroSection = () => {
 
   return (
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden grain-overlay">
+      {/* Video background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={videoAsset} type="video/mp4" />
+      </video>
+
+      {/* Black to Gold gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-gold/40" />
+
       {/* Floating gold orbs */}
       {[...Array(6)].map((_, i) => (
         <div
