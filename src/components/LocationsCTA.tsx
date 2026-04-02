@@ -5,7 +5,7 @@ const locations = [
 ];
 
 const LocationsCTA = () => (
-  <section id="contact" className="py-24 px-6 border-y border-gold/15">
+  <section id="contact" className="py-24 px-6 border-y border-gold/15 bg-white">
     <div className="max-w-7xl mx-auto text-center">
       <div className="scroll-reveal">
         <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Nos Boutiques</p>
@@ -32,8 +32,7 @@ const LocationsCTA = () => (
             href="https://wa.me/212XXXXXXXXX"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-body text-sm tracking-widest uppercase transition-all"
-            style={{ backgroundColor: "#25D366", color: "#fff" }}
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-body text-sm tracking-widest uppercase transition-all border border-gold/20 bg-white text-gold hover:bg-gold hover:text-white"
           >
             <span>WhatsApp</span>
           </a>
@@ -41,7 +40,7 @@ const LocationsCTA = () => (
             href="https://instagram.com/addahab.bijouterie.officiel"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gold text-primary-foreground font-body text-sm tracking-widest uppercase hover:brightness-110 transition-all"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gold text-white font-body text-sm tracking-widest uppercase hover:brightness-110 transition-all"
           >
             <span>Instagram</span>
           </a>

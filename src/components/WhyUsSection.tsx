@@ -15,7 +15,7 @@ const WhyUsSection = () => (
 
       <div className="stagger-children grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((f) => (
-          <div key={f.title} className="bg-card border border-gold/10 p-8 text-center hover:border-gold/30 transition-colors">
+          <div key={f.title} className="bg-card border border-gold/10 p-8 text-center hover:border-gold/30 transition-colors shadow-sm">
             <div className="text-3xl text-gold mb-4 font-display">{f.icon}</div>
             <h3 className="font-display text-xl text-ivory mb-3">{f.title}</h3>
             <p className="font-body text-sm text-ivory/40 leading-relaxed">{f.desc}</p>

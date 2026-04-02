@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 nav-transition ${
-        scrolled ? "bg-deep-black/95 backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-md border-b border-gold/10" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -57,7 +57,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-deep-black/98 backdrop-blur-lg border-t border-gold/10">
+        <div className="md:hidden bg-white/98 backdrop-blur-lg border-t border-gold/10">
           <div className="flex flex-col items-center gap-6 py-8">
             {navLinks.map((link) => (
               <a

@@ -2,7 +2,7 @@ import videoAsset from "@/assets/855854-hd_1280_720_24fps.mp4";
 
 const GoldVideoSection = () => {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* Video background */}
       <div className="absolute inset-0 w-full h-full">
         <video
@@ -17,7 +17,7 @@ const GoldVideoSection = () => {
         </video>
         
         {/* Black to Gold gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-gold/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-gold/15" />
       </div>
 
       {/* Content overlay */}

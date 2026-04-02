@@ -3,7 +3,7 @@ const MarqueeStrip = () => {
   const repeated = (text + " ").repeat(6);
 
   return (
-    <div className="bg-deep-black border-y border-gold/20 py-4 overflow-hidden">
+    <div className="bg-white border-y border-gold/20 py-4 overflow-hidden">
       <div className="animate-marquee whitespace-nowrap text-gold font-body text-sm tracking-[0.3em] uppercase">
         {repeated}{repeated}
       </div>

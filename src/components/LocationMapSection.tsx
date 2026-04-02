@@ -1,5 +1,5 @@
 const LocationMapSection = () => (
-  <section className="py-24 px-6 bg-gradient-to-b from-black/50 to-black">
+  <section className="py-24 px-6 bg-gradient-to-b from-white to-muted/40">
     <div className="max-w-7xl mx-auto">
       {/* Header */}
       <div className="text-center mb-16 scroll-reveal">
@@ -17,7 +17,7 @@ const LocationMapSection = () => (
       </div>
 
       {/* Map Container */}
-      <div className="rounded-lg overflow-hidden border border-gold/20 shadow-2xl">
+      <div className="rounded-lg overflow-hidden border border-gold/20 shadow-2xl bg-white">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.835377078034!2d-7.6339787!3d33.5836233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d3005bf1a9f5%3A0xbc5cd671e8bf187f!2sAddahab%20Bijouterie!5e0!3m2!1sfr!2sma!4v1775034511534!5m2!1sfr!2sma"
           width="100%"

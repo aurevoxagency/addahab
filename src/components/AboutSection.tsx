@@ -36,10 +36,10 @@ const AboutSection = () => (
             <div className="absolute inset-0 bg-gradient-radial from-gold/10 to-transparent rounded-2xl blur-3xl group-hover:from-gold/20 transition-all duration-300" />
             {/* Logo image with shadow and hover effects */}
             <img 
-              src={logo} 
-              alt="Addahab Logo" 
-              className="w-80 h-80 object-contain p-8 rounded-2xl shadow-2xl group-hover:shadow-gold/50 group-hover:scale-105 transition-all duration-300 relative z-10"
-            />
+                src={logo} 
+                alt="Addahab Logo" 
+                className="w-80 h-80 object-contain p-8 rounded-2xl shadow-2xl group-hover:shadow-gold/50 group-hover:scale-105 transition-all duration-300 relative z-10 bg-white"
+              />
           </div>
         </div>
       </div>

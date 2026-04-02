@@ -14,7 +14,7 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="relative py-20 px-6 bg-gradient-to-b from-black to-black/80">
+    <section className="relative py-20 px-6 bg-gradient-to-b from-white to-muted/40">
       <div className="max-w-2xl mx-auto">
         {/* Decorative line */}
         <div className="flex items-center gap-4 mb-8">
@@ -41,12 +41,12 @@ const NewsletterSection = () => {
               placeholder="Votre adresse email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-4 sm:px-6 py-3 sm:py-4 bg-black/50 border border-gold/30 text-ivory placeholder-ivory/40 font-body text-sm focus:outline-none focus:border-gold/70 transition-colors"
+              className="flex-1 px-4 sm:px-6 py-3 sm:py-4 bg-white border border-gold/30 text-ivory placeholder-ivory/40 font-body text-sm focus:outline-none focus:border-gold/70 transition-colors"
               required
             />
             <button
               type="submit"
-              className="px-4 sm:px-8 py-3 sm:py-4 bg-gold text-black font-body text-sm font-semibold tracking-widest uppercase hover:brightness-110 transition-all whitespace-nowrap"
+              className="px-4 sm:px-8 py-3 sm:py-4 bg-gold text-white font-body text-sm font-semibold tracking-widest uppercase hover:brightness-110 transition-all whitespace-nowrap"
             >
               S'inscrire
             </button>

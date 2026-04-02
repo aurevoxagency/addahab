@@ -43,12 +43,12 @@ const ServicesSection = () => (
         {services.map((service) => (
           <article
             key={service.title}
-            className="group relative overflow-hidden border border-gold/20 bg-gradient-to-b from-black/70 to-black/40 p-6 min-h-[250px]"
+            className="group relative overflow-hidden border border-gold/20 bg-white p-6 min-h-[250px] shadow-sm"
           >
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_top,hsla(43,52%,54%,0.18),transparent_65%)]" />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_top,hsla(120,61%,50%,0.16),transparent_65%)]" />
 
             <div className="relative z-10">
-              <div className="w-12 h-12 rounded-full border border-gold/35 flex items-center justify-center text-gold text-lg mb-5">
+              <div className="w-12 h-12 rounded-full border border-gold/35 flex items-center justify-center text-gold text-lg mb-5 bg-muted/40">
                 {service.icon}
               </div>
               <h3 className="font-display text-xl text-ivory mb-3 group-hover:text-gold transition-colors">

@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="bg-gradient-to-b from-black/90 to-black pt-16 pb-8 px-6">
+  <footer className="bg-gradient-to-b from-white to-muted/40 pt-16 pb-8 px-6 border-t border-gold/10">
     <div className="max-w-7xl mx-auto">
       {/* Main footer content */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

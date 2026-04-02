@@ -34,7 +34,7 @@ const CollectionsGrid = () => (
             }}
           >
             {/* Overlay gradient for text visibility */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/35 to-black/65" />
             
             {/* Decorative corner */}
             <div className="absolute top-4 right-4 w-10 h-10 border-t border-r border-gold/20 transition-all group-hover:border-gold/50 group-hover:w-14 group-hover:h-14 z-20" />
@@ -46,7 +46,7 @@ const CollectionsGrid = () => (
             </div>
 
             <div className="relative z-10">
-              <h3 className="font-display text-2xl text-ivory group-hover:text-gold transition-colors">
+              <h3 className="font-display text-2xl text-white group-hover:text-gold transition-colors">
                 {item.name}
               </h3>
               <div className="w-8 h-px bg-gold/40 mt-2 group-hover:w-16 transition-all" />
