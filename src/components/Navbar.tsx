@@ -36,7 +36,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="font-body text-sm tracking-widest uppercase text-ivory/80 hover:text-gold gold-underline transition-colors"
+              className={`font-body text-sm tracking-widest uppercase gold-underline transition-colors ${scrolled ? "text-black hover:text-gold" : "text-white hover:text-gold"}`}
             >
               {link.label}
             </a>
@@ -49,9 +49,9 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
-          <span className={`block w-6 h-px bg-gold transition-transform duration-300 ${menuOpen ? "rotate-45 translate-y-[4px]" : ""}`} />
-          <span className={`block w-6 h-px bg-gold transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-px bg-gold transition-transform duration-300 ${menuOpen ? "-rotate-45 -translate-y-[4px]" : ""}`} />
+          <span className={`block w-6 h-px transition-transform duration-300 ${scrolled ? "bg-black" : "bg-white"} ${menuOpen ? "rotate-45 translate-y-[4px]" : ""}`} />
+          <span className={`block w-6 h-px transition-opacity duration-300 ${scrolled ? "bg-black" : "bg-white"} ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px transition-transform duration-300 ${scrolled ? "bg-black" : "bg-white"} ${menuOpen ? "-rotate-45 -translate-y-[4px]" : ""}`} />
         </button>
       </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="font-body text-sm tracking-widest uppercase text-ivory/80 hover:text-gold transition-colors"
+                className="font-body text-sm tracking-widest uppercase text-black hover:text-gold transition-colors"
               >
                 {link.label}
               </a>

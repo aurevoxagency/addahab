@@ -33,12 +33,12 @@ const AboutSection = () => (
         <div className="scroll-reveal flex items-center justify-center">
           <div className="relative w-full flex items-center justify-center group">
             {/* Glow effect background */}
-            <div className="absolute inset-0 bg-gradient-radial from-gold/10 to-transparent rounded-2xl blur-3xl group-hover:from-gold/20 transition-all duration-300" />
+            <div className="absolute inset-0 rounded-2xl blur-3xl opacity-80 transition-all duration-300 group-hover:opacity-100 bg-[radial-gradient(circle,rgba(182,108,43,0.18),rgba(48,88,61,0.14),rgba(42,85,57,0.12),transparent_72%)]" />
             {/* Logo image with shadow and hover effects */}
             <img 
                 src={logo} 
                 alt="Addahab Logo" 
-                className="w-80 h-80 object-contain p-8 rounded-2xl shadow-2xl group-hover:shadow-gold/50 group-hover:scale-105 transition-all duration-300 relative z-10 bg-white"
+                className="w-80 h-80 object-contain p-8 rounded-2xl shadow-2xl group-hover:shadow-gold/50 group-hover:scale-105 transition-all duration-300 relative z-10 bg-white/70"
               />
           </div>
         </div>

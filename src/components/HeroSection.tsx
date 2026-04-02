@@ -32,8 +32,8 @@ const HeroSection = () => {
       </video>
 
       {/* Light editorial overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/35 to-white/55" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.55),rgba(255,255,255,0.12)_45%,rgba(255,255,255,0.38)_100%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/72 via-white/38 to-white/58" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(182,108,43,0.16),rgba(48,88,61,0.14)_38%,rgba(42,85,57,0.08)_52%,rgba(255,255,255,0.28)_100%)]" />
 
       {/* Floating green accents */}
       {[...Array(6)].map((_, i) => (
@@ -43,7 +43,7 @@ const HeroSection = () => {
           style={{
             width: `${20 + i * 15}px`,
             height: `${20 + i * 15}px`,
-            background: `radial-gradient(circle, hsla(142, 65%, 40%, 0.2), transparent)`,
+            background: `radial-gradient(circle, ${i % 3 === 0 ? "rgba(182,108,43,0.22)" : i % 3 === 1 ? "rgba(48,88,61,0.2)" : "rgba(42,85,57,0.16)"}, transparent)`,
             left: `${10 + i * 15}%`,
             top: `${20 + i * 10}%`,
             animation: `float-orb ${6 + i * 2}s ease-in-out infinite`,
@@ -55,17 +55,17 @@ const HeroSection = () => {
       <div className="relative z-10 px-6 max-w-5xl w-full">
         <div className="mx-auto max-w-3xl flex flex-col items-center text-center px-4 sm:px-8 py-14 sm:py-16">
           {/* Decorative line */}
-          <div className="w-24 h-px bg-gold/70 mx-auto mb-8" />
+          <div className="w-24 h-px mx-auto mb-8 bg-[linear-gradient(90deg,#b66c2b,#30583d,#b66c2b)]" />
 
-          <p className="font-body text-sm tracking-[0.35em] uppercase text-gold mb-4">
+          <p className="inline-flex items-center rounded-full border border-gold/20 bg-white/55 px-4 py-1.5 font-body text-[11px] sm:text-xs font-semibold tracking-[0.35em] uppercase text-gold mb-5 backdrop-blur-sm">
             Boutique de prestige
           </p>
 
-          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-6 text-ivory max-w-4xl mx-auto">
+          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-6 text-forest max-w-4xl mx-auto drop-shadow-[0_1px_18px_rgba(255,255,255,0.35)]">
             {headline.split("").map((char, i) => (
               <span
                 key={i}
-                className="inline-block text-ivory"
+                className="inline-block gold-gradient-text"
                 style={{
                   opacity: i < visibleCount ? 1 : 0,
                   transform: i < visibleCount ? "translateY(0)" : "translateY(30px)",
@@ -78,7 +78,7 @@ const HeroSection = () => {
           </h1>
 
           <p
-            className="font-body text-base sm:text-lg text-ivory/80 tracking-[0.16em] uppercase mb-10 max-w-2xl mx-auto leading-relaxed"
+            className="font-body text-base sm:text-lg text-black/85 tracking-[0.12em] uppercase mb-10 max-w-2xl mx-auto leading-relaxed font-semibold"
             style={{ opacity: visibleCount >= headline.length ? 1 : 0, transition: "opacity 1s ease 0.3s" }}
           >
             Bijoux & montres de prestige - Casablanca
@@ -96,7 +96,7 @@ const HeroSection = () => {
             </a>
             <a
               href="#contact"
-              className="px-8 py-3.5 border border-gold/40 text-ivory font-body text-sm font-semibold tracking-widest uppercase hover:bg-gold/10 transition-all bg-white/40 backdrop-blur-sm"
+              className="px-8 py-3.5 border border-gold/40 text-black font-body text-sm font-semibold tracking-widest uppercase hover:bg-gold/10 transition-all bg-white/35 backdrop-blur-sm"
             >
               Nous contacter
             </a>

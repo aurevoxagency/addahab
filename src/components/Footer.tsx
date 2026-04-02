@@ -1,41 +1,41 @@
 const Footer = () => (
-  <footer className="bg-gradient-to-b from-white to-muted/40 pt-16 pb-8 px-6 border-t border-gold/10">
+  <footer className="bg-black pt-16 pb-8 px-6 border-t border-gold/20">
     <div className="max-w-7xl mx-auto">
       {/* Main footer content */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         {/* Brand column */}
         <div className="text-center lg:text-left">
-          <h3 className="font-display text-2xl lg:text-3xl text-gold tracking-wider mb-2">
+          <h3 className="font-display text-2xl lg:text-3xl text-white tracking-wider mb-2">
             Addahab
           </h3>
-          <p className="font-display text-sm text-gold/40 mb-4">الذهب</p>
-          <p className="font-body text-xs text-ivory/40 leading-relaxed mb-6">
+          <p className="font-display text-sm text-gold/70 mb-4">الذهب</p>
+          <p className="font-body text-xs text-white/70 leading-relaxed mb-6">
             Bijoux et montres de prestige depuis plusieurs années
           </p>
-          <div className="w-16 h-px bg-gold/30 mx-auto lg:mx-0" />
+          <div className="w-16 h-px bg-gold/50 mx-auto lg:mx-0" />
         </div>
 
         {/* Quick links */}
         <div>
-          <h4 className="font-display text-sm text-gold tracking-widest uppercase mb-5">Navigation</h4>
+          <h4 className="font-display text-sm text-white tracking-widest uppercase mb-5">Navigation</h4>
           <ul className="space-y-3">
             <li>
-              <a href="#accueil" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#accueil" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Accueil
               </a>
             </li>
             <li>
-              <a href="#collections" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#collections" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Collections
               </a>
             </li>
             <li>
-              <a href="#about" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#about" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 À Propos
               </a>
             </li>
             <li>
-              <a href="#contact" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#contact" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Contact
               </a>
             </li>
@@ -44,25 +44,25 @@ const Footer = () => (
 
         {/* Collections */}
         <div>
-          <h4 className="font-display text-sm text-gold tracking-widest uppercase mb-5">Collections</h4>
+          <h4 className="font-display text-sm text-white tracking-widest uppercase mb-5">Collections</h4>
           <ul className="space-y-3">
             <li>
-              <a href="#collections" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#collections" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Bagues
               </a>
             </li>
             <li>
-              <a href="#collections" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#collections" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Colliers
               </a>
             </li>
             <li>
-              <a href="#collections" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#collections" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Bracelets
               </a>
             </li>
             <li>
-              <a href="#collections" className="font-body text-xs text-ivory/50 hover:text-gold transition-colors">
+              <a href="#collections" className="font-body text-xs text-white/70 hover:text-gold transition-colors">
                 Montres
               </a>
             </li>
@@ -71,20 +71,20 @@ const Footer = () => (
 
         {/* Contact */}
         <div>
-          <h4 className="font-display text-sm text-gold tracking-widest uppercase mb-5">Contactez-Nous</h4>
+          <h4 className="font-display text-sm text-white tracking-widest uppercase mb-5">Contactez-Nous</h4>
           <div className="space-y-4">
             <div>
-              <p className="font-body text-xs text-ivory/40 mb-1">Adresse</p>
-              <p className="font-body text-xs text-ivory/60">Casablanca, Maroc</p>
+              <p className="font-body text-xs text-white/50 mb-1">Adresse</p>
+              <p className="font-body text-xs text-white/75">Casablanca, Maroc</p>
             </div>
             <div>
-              <p className="font-body text-xs text-ivory/40 mb-1">Téléphone</p>
+              <p className="font-body text-xs text-white/50 mb-1">Téléphone</p>
               <a href="tel:+212" className="font-body text-xs text-gold hover:text-gold/80 transition-colors">
                 +212 (0) 5XX XXX XXX
               </a>
             </div>
             <div>
-              <p className="font-body text-xs text-ivory/40 mb-1">Email</p>
+              <p className="font-body text-xs text-white/50 mb-1">Email</p>
               <a href="mailto:contact@addahab.ma" className="font-body text-xs text-gold hover:text-gold/80 transition-colors">
                 contact@addahab.ma
               </a>
@@ -94,7 +94,7 @@ const Footer = () => (
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent mb-8" />
+      <div className="h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent mb-8" />
 
       {/* Bottom footer */}
       <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
@@ -104,7 +104,7 @@ const Footer = () => (
             href="https://www.instagram.com/addahab.bijouterie.officiel/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gold/40 hover:text-gold transition-colors duration-300"
+            className="text-white/45 hover:text-gold transition-colors duration-300"
             title="Instagram"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -113,7 +113,7 @@ const Footer = () => (
           </a>
           <a
             href="#"
-            className="text-gold/40 hover:text-gold transition-colors duration-300"
+            className="text-white/45 hover:text-gold transition-colors duration-300"
             title="Facebook"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -123,7 +123,7 @@ const Footer = () => (
         </div>
 
         {/* Copyright */}
-        <p className="font-body text-xs text-ivory/30 tracking-wider text-center sm:text-right">
+        <p className="font-body text-xs text-white/50 tracking-wider text-center sm:text-right">
           © 2025 Addahab Elhayani — Casablanca, Maroc. Tous droits réservés.
         </p>
       </div>
